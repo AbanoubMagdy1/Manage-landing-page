@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Manage landing page</title>
+  <link rel="stylesheet" href="./build/style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,17 +16,62 @@
   </style>
 </head>
 <body>
+
+  <!-- Header -->
+  <header class="header px-5 lg:px-12 py-8">
+    <!-- Nav -->
+    <nav>
+      <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <div class="pt-2">
+          <img src="./images/logo.svg" alt="Logo">
+        </div>
+        <!-- Menu -->
+        <div class="hidden lg:flex space-x-3 text-xl">
+          <a class="transition hover:text-darkGrayishBlue" href="#">Pricing</a>
+          <a class="transition hover:text-darkGrayishBlue" href="#">Product</a>
+          <a class="transition hover:text-darkGrayishBlue" href="#">About Us</a>
+          <a class="transition hover:text-darkGrayishBlue" href="#">Careers</a>
+          <a class="transition hover:text-darkGrayishBlue" href="#">Community</a>
+        </div>
+        <!-- Get started button -->
+        <button class="hidden px-4 pt-2 pb-3 lg:block rounded-full text-white 
+        shadow-lg shadow-brightRed/50 bg-brightRed uppercase hover:bg-brightRedLight">
+          Get Started
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="flex justify-between lg:space-x-8 flex-col-reverse lg:flex-row py-3">
+      <!-- Left -->
+      <div class="w-full mx-auto lg:w-1/2">
+        <h1 class="text-center lg:text-left mt-5 mb-5 lg:mt-16 font-semibold text-6xl  lg:text-8xl text-darkBlue">
+          Bring everyone together to build better products.
+        </h1>
+
+        <p class="text-center text-2xl mx-auto lg:my-10 lg:mx-0 my-6 md:w-2/3 lg:text-justify text-darkGrayishBlue">
+          Manage makes it simple for software teams to plan day-to-day 
+          tasks while keeping the larger team goals in view.        
+        </p>
+
+        <button class="mx-auto lg:mx-0 px-4 pt-2 pb-3 block rounded-full text-white 
+        shadow-lg shadow-brightRed/50 bg-brightRed uppercase hover:bg-brightRedLight">
+          Get Started
+        </button>
+      </div>
+
+      <!-- Right -->
+      <div class="w-full mx-auto lg:w-1/2 my-6 lg:my-2">
+        <img class="w-full h-full" src="./images/illustration-intro.svg" alt="Hero image">
+      </div>
+    </div>
+
+
+  </header>
+
 <!--
-  Pricing
-  Product
-  About Us
-  Careers
-  Community
-
-  Get Started
-
-  Bring everyone together to build better products.
-
+ 
   Manage makes it simple for software teams to plan day-to-day 
   tasks while keeping the larger team goals in view.
 
