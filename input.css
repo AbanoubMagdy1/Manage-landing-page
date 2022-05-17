@@ -4,6 +4,12 @@
 
 body {
     counter-reset: difference;
+    background-image: url('../images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    background-position: 162% -26%;   
+    overflow-x: hidden;
+
 }
   
 .item h6::before {
@@ -17,6 +23,22 @@ body {
     margin-right: .5rem;
     background-color: hsl(12, 88%, 59%);
     color : white;
+}
+
+.cta {
+    background-image: url('../images/bg-simplify-section-desktop.svg');
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+    body {
+        background-size: 800px;
+        background-position: 155% -5%;    
+    }
+
+    .cta {
+        background-image: url('../images/bg-simplify-section-mobile.svg');
+    }
 }
 
 .glide__track{
