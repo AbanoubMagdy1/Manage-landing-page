@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Manage landing page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./build/style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -18,7 +19,7 @@
 <body>
 
   <!-- Header -->
-  <header class="header px-5 lg:px-12 py-8">
+  <header class="px-5 lg:px-12 py-8">
     <!-- Nav -->
     <nav>
       <div class="flex justify-between items-center">
@@ -41,80 +42,170 @@
         </button>
       </div>
     </nav>
+  </header>
 
-    <!-- Hero -->
-    <div class="flex justify-between lg:space-x-8 flex-col-reverse lg:flex-row py-3">
-      <!-- Left -->
-      <div class="w-full mx-auto lg:w-1/2">
-        <h1 class="text-center lg:text-left mt-5 mb-5 lg:mt-16 font-semibold text-6xl  lg:text-8xl text-darkBlue">
-          Bring everyone together to build better products.
-        </h1>
+  <!-- Hero -->
+  <div class="px-5 lg:px-12 py-8 flex justify-between lg:space-x-8 flex-col-reverse lg:flex-row py-3">
+    <!-- Left -->
+    <div class="w-full mx-auto lg:w-1/2">
+      <h1 class="text-center lg:text-left mt-5 mb-5 lg:mt-16 font-semibold text-6xl  lg:text-8xl text-darkBlue">
+        Bring everyone together to build better products.
+      </h1>
 
-        <p class="text-center text-2xl mx-auto lg:my-10 lg:mx-0 my-6 md:w-2/3 lg:text-justify text-darkGrayishBlue">
-          Manage makes it simple for software teams to plan day-to-day 
-          tasks while keeping the larger team goals in view.        
-        </p>
+      <p class="text-center text-2xl mx-auto lg:my-10 lg:mx-0 my-6 md:w-2/3 lg:text-justify text-darkGrayishBlue">
+        Manage makes it simple for software teams to plan day-to-day 
+        tasks while keeping the larger team goals in view.        
+      </p>
 
-        <button class="mx-auto lg:mx-0 px-4 pt-2 pb-3 block rounded-full text-white 
-        shadow-lg shadow-brightRed/50 bg-brightRed uppercase hover:bg-brightRedLight">
-          Get Started
-        </button>
+      <button class="mx-auto lg:mx-0 px-6 pt-4 pb-5 text-xl block rounded-full text-white 
+      shadow-lg shadow-brightRed/50 bg-brightRed uppercase hover:bg-brightRedLight">
+        Get Started
+      </button>
+    </div>
+
+    <!-- Right -->
+    <div class="w-full mx-auto lg:w-1/2 my-6 lg:my-2">
+      <img class="w-full h-full" src="./images/illustration-intro.svg" alt="Hero image">
+    </div>
+  </div>
+
+  <!-- Different -->
+  <div class="px-5 lg:px-12 py-8 flex justify-between lg:space-x-8 flex-col lg:flex-row py-12 mt-16">
+    <!-- Left -->
+    <div class="w-full mx-auto lg:w-1/2 ">
+      <h3 class="text-center lg:text-left mb-10 font-bold text-4xl  lg:text-5xl text-darkBlue">
+        What’s different about Manage?
+      </h3>
+
+      <p class="text-center text-2xl mx-auto lg:mx-0 my-6 md:w-2/3 lg:text-justify text-darkGrayishBlue">
+        Manage provides all the functionality your team needs, without 
+        the complexity. Our software is tailor-made for modern digital 
+        product teams. 
+      </p>
+    </div>
+
+    <!-- Right -->
+    <div class="w-full mx-auto lg:w-1/2 my-6 lg:my-2">
+      <div class="item mb-16">
+        <h6 class="mb-3 font-semibold text-2xl text-darkBlue bg-veryPaleRed lg:bg-transparent">
+          Track company-wide progress
+        </h6>
+        <p class="text-2xl text-justify lg:my-6 lg:mx-0 my-6 text-darkGrayishBlue">
+          See how your day-to-day tasks fit into the wider vision. Go from 
+          tracking progress at the milestone level all the way done to the 
+          smallest of details. Never lose sight of the bigger picture again.          
+        </p>    
       </div>
+      <div class="item mb-16">
+        <h6 class="mb-3 font-semibold text-2xl text-darkBlue bg-veryPaleRed lg:bg-transparent">
+          Advanced built-in reports
+        </h6>
+        <p class="text-2xl text-justify lg:my-6 lg:mx-0 my-6 text-darkGrayishBlue">
+          Set internal delivery estimates and track progress toward company 
+          goals. Our customisable dashboard helps you build out the reports 
+          you need to keep key stakeholders informed.          
+        </p>    
+      </div>
+      <div class="item mb-16">
+        <h6 class="mb-3 font-semibold text-2xl text-darkBlue bg-veryPaleRed lg:bg-transparent">
+          Everything you need in one place
+        </h6>
+        <p class="text-2xl text-justify lg:my-6 lg:mx-0 my-6 text-darkGrayishBlue">
+          Stop jumping from one service to another to communicate, store files, 
+          track tasks and share documents. Manage offers an all-in-one team 
+          productivity solution.         
+        </p>    
+      </div>
+    </div>
+  </div>
+ 
+    <!-- What said -->
+    <div class="px-5 lg:px-12 py-8 py-12 mt-16">
+      <h3 class="text-center mb-28 font-bold text-4xl lg:text-5xl text-darkBlue">
+        What they’ve said
+      </h3>
+      <!-- Carousel -->
+      <div class="glide">
+        <div data-glide-el="track" class="glide__track">
+          <ul class="glide__slides">
+            <li class="glide__slide relative bg-veryLightGray p-6 text-center">
+              <div class="mt-20">
+                <h6 class="mb-3 font-semibold text-xl text-darkBlue">
+                  Anisha Li
+                </h6>
+                <p class="text-2xl text-center lg:my-6 lg:mx-0 my-6 text-darkGrayishBlue">
+                  “Manage has supercharged our team’s workflow. The ability to maintain 
+                  visibility on larger milestones at all times keeps everyone motivated.”     
+                </p>  
+  
+              </div>
+              <img  class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2" 
+                src="./images/avatar-anisha.png" 
+                alt="Anisha li"
+              />        
+            </li>
 
-      <!-- Right -->
-      <div class="w-full mx-auto lg:w-1/2 my-6 lg:my-2">
-        <img class="w-full h-full" src="./images/illustration-intro.svg" alt="Hero image">
+            <li class="glide__slide relative bg-veryLightGray p-6 text-center">
+              <div class="mt-20">
+                <h6 class="mb-3 font-semibold text-xl text-darkBlue">
+                  Ali Bravo
+                </h6>
+                <p class="text-2xl text-center lg:my-6 lg:mx-0 my-6 text-darkGrayishBlue">
+                  “We have been able to cancel so many other subscriptions since using 
+                  Manage. There is no more cross-channel confusion and everyone is much 
+                  more focused.”                
+                </p>  
+  
+              </div>
+              <img  class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2" 
+                src="./images/avatar-ali.png" 
+                alt="Ali Bravo"
+              />        
+            </li>
+
+            <li class="glide__slide relative bg-veryLightGray p-6 text-center">
+              <div class="mt-20">
+                <h6 class="mb-3 font-semibold text-xl text-darkBlue">
+                  Richard Watts
+                </h6>
+                <p class="text-2xl text-center lg:my-6 lg:mx-0 my-6 text-darkGrayishBlue">
+                  “Manage allows us to provide structure and process. It keeps us organized 
+                  and focused. I can’t stop recommending them to everyone I talk to!”
+                </p>  
+              </div>
+              <img  class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2" 
+                src="./images/avatar-richard.png" 
+                alt="Richard Watts"
+              />        
+            </li>
+
+            <li class="glide__slide relative bg-veryLightGray p-6 text-center">
+              <div class="mt-20">
+                <h6 class="mb-3 font-semibold text-xl text-darkBlue">
+                  Shanai Gough
+                </h6>
+                <p class="text-2xl text-center lg:my-6 lg:mx-0 my-6 text-darkGrayishBlue">
+                  “Their software allows us to track, manage and collaborate on our projects 
+                  from anywhere. It keeps the whole team in-sync without being intrusive.”
+                </p>  
+  
+              </div>
+              <img  class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2" 
+                src="./images/avatar-shanai.png" 
+                alt="Anisha li"
+              />        
+            </li>
+          </ul>
+          <button class="mx-auto mt-12 px-6 pt-4 pb-5 text-xl block rounded-full text-white 
+          shadow-lg shadow-brightRed/50 bg-brightRed uppercase hover:bg-brightRedLight">
+            Get Started
+          </button>
+    
+        </div>
       </div>
     </div>
 
-
-  </header>
-
 <!--
- 
-  Manage makes it simple for software teams to plan day-to-day 
-  tasks while keeping the larger team goals in view.
-
-  Get Started
-
-  What’s different about Manage?
-
-  Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams. 
-
-  01
-  Track company-wide progress
-  See how your day-to-day tasks fit into the wider vision. Go from 
-  tracking progress at the milestone level all the way done to the 
-  smallest of details. Never lose sight of the bigger picture again.
-
-  02
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company 
-  goals. Our customisable dashboard helps you build out the reports 
-  you need to keep key stakeholders informed.
-
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files, 
-  track tasks and share documents. Manage offers an all-in-one team 
-  productivity solution.
-
-  What they’ve said
-
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”
-
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using 
-  Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”
-
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized 
-  and focused. I can’t stop recommending them to everyone I talk to!”
 
   Shanai Gough
   “Their software allows us to track, manage and collaborate on our projects 
@@ -144,5 +235,7 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
   -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
 </body>
 </html>

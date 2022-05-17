@@ -2,7 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.header{
-    background-image: url("images/bg-simplify-section-desktop.svg");
+body {
+    counter-reset: difference;
 }
+  
+.item h6::before {
+    counter-increment: difference;
+    content: "0" counter(difference);
+    text-align: center;
+    display: inline-block;
+    width: 45px;
+    height: 30px;
+    border-radius: 999px;
+    margin-right: .5rem;
+    background-color: hsl(12, 88%, 59%);
+    color : white;
+}
+
+.glide__track{
+    overflow: visible;
+}
+
+.glide__slides{
+    overflow: visible;
+}
+  
