@@ -1,6 +1,6 @@
 # Frontend Mentor - Manage landing page
 
-![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)
+View the website: https://abanoubmagdy1.github.io/Manage-landing-page/
 
 ## Welcome! 👋
 
