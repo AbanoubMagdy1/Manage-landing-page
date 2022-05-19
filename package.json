@@ -4,7 +4,8 @@
   "description": "![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "compile": "tailwindcss -i ./input.css -o ./build/style.css --watch"
+    "compile": "tailwindcss -i ./input.css -o ./build/style.css --watch",
+    "build": "manage-landing-page build --output public"
   },
   "keywords": [],
   "author": "",
