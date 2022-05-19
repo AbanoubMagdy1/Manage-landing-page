@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "tailwindcss -i ./input.css -o ./build/style.css --watch",
-    "build": "manage-landing-page build --output public"
+    "build": "build --output public"
   },
   "keywords": [],
   "author": "",
