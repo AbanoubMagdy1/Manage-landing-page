@@ -856,10 +856,11 @@ body.open{
 header{
   position: -webkit-sticky;
   position: sticky;
+  top: 0px;
+  transition: all 0.2s ease-in;
 }
 
 header.active{
-  top: 0px;
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
   z-index: 1;
@@ -930,7 +931,11 @@ header.active{
 .overlay{
   position: fixed;
   inset: 0;
+  visibility: hidden;
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8) 100%);
+}
+
+.overlay.close{
   -webkit-animation: fadeOut .5s forwards ease-in-out;
           animation: fadeOut .5s forwards ease-in-out;
 }
@@ -991,10 +996,7 @@ header.active{
 @-webkit-keyframes fadeOut{
   0%{
     opacity: 1;
-  }
-
-  99%{
-    visibility: hidden;
+    visibility: visible;
   }
 
   100%{
@@ -1006,10 +1008,7 @@ header.active{
 @keyframes fadeOut{
   0%{
     opacity: 1;
-  }
-
-  99%{
-    visibility: hidden;
+    visibility: visible;
   }
 
   100%{
