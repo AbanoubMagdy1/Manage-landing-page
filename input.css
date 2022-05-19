@@ -12,6 +12,10 @@ body {
 
 }
   
+.contain{
+    padding: 32px 20px;
+}
+
 .item h6::before {
     counter-increment: difference;
     content: "0" counter(difference);
@@ -30,6 +34,15 @@ body {
     background-repeat: no-repeat;
 }
 
+.glide__track{
+    overflow: visible;
+}
+
+.glide__slides{
+    overflow: visible;
+}
+  
+
 @media (max-width: 576px) {
     body {
         background-size: 800px;
@@ -41,11 +54,9 @@ body {
     }
 }
 
-.glide__track{
-    overflow: visible;
+@media (min-width: 976px) {
+    .contain{
+        padding: 40px 100px;
+    }
 }
 
-.glide__slides{
-    overflow: visible;
-}
-  
