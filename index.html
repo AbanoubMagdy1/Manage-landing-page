@@ -40,9 +40,30 @@
         shadow-lg shadow-brightRed/50 bg-brightRed uppercase hover:bg-brightRedLight">
           Get Started
         </button>
+
+        <!-- Hamburger -->
+        <div class="hamburger flex flex-col justify-between lg:hidden w-8 h-6">
+          <div class="line transition w-full h-0.5 bg-veryDarkBlue"></div>
+          <div class="line transition w-full h-0.5 bg-veryDarkBlue"></div>
+          <div class="line transition w-full h-0.5 bg-veryDarkBlue"></div>
+        </div>
       </div>
     </nav>
   </header>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+
+  <!-- Mobile menu -->
+  <div class="menu transition fixed flex flex-col items-center drop-shadow-md space-y-8 lg:hidden -translate-y-96 top-6 left-10 right-10 p-10 bg-white">
+    <a class="transition hover:text-darkGrayishBlue text-xl" href="#">Pricing</a>
+    <a class="transition hover:text-darkGrayishBlue text-xl" href="#">Product</a>
+    <a class="transition hover:text-darkGrayishBlue text-xl" href="#">About Us</a>
+    <a class="transition hover:text-darkGrayishBlue text-xl" href="#">Careers</a>
+    <a class="transition hover:text-darkGrayishBlue text-xl" href="#">Community</a>
+  </div>
+
 
   <!-- Hero -->
   <div class="contain flex justify-between lg:space-x-8 flex-col-reverse lg:flex-row py-3">
