@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "tailwindcss -i ./input.css -o ./build/style.css --watch",
-    "build": "build --output public"
+    "build": "npm run build"
   },
   "keywords": [],
   "author": "",

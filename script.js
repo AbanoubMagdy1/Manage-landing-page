@@ -4,10 +4,10 @@ const menu = document.querySelector('.menu');
 const overlay = document.querySelector('.overlay');
 
 hamburger.addEventListener('click', () => {
-	document.body.classList.add('open')
-	hamburger.classList.add('open')
-	menu.classList.add('open')
-	overlay.className = 'overlay open'
+	document.body.classList.toggle('open')
+	hamburger.classList.toggle('open')
+	menu.classList.toggle('open')
+	overlay.classList.toggle('open')
 })
 
 overlay.addEventListener('click', () => {
